@@ -9,6 +9,8 @@
   <h1>Your JavaScript page</h1>
   <p>Use your Inspector to view your console.</p>
   <script>
+    // Chapter 9: JavaScript Basics
+
     console.log("Let's do math:");
     let x = 5;
     console.log(x);
@@ -29,11 +31,44 @@
     let middleName = 'Grace';
     let lastName = 'Gaddis';
     let name = firstName + ' ' + middleName + ' ' + lastName;
-    console.log(name)
+    console.log(name);
     
     // Strings on my own
     let greeting = 'My name is ' + name + '.';
-    console.log(greeting)
+    console.log(greeting);
+
+    // Chapter 10: JS Functions
+
+    console.log('Using Functions');
+
+    // Function to make square numbers
+    function makeSquare(theNumb) {
+      return Math.pow(theNumb, 2);
+    }
+
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    let try02 = makeSquare(4);
+    console.log(try02);
+
+    let try03 = makeSquare(5);
+    console.log(try03);
+
+    // Functions on my own
+    function makeName(firstName, middleName, lastName) {
+      let name = firstName + ' ' + middleName + ' ' + lastName;
+      return name;
+    }
+
+    let name01 = makeName('Aislyn', 'Grace', 'Gaddis');
+    console.log(name01);
+
+    let name02 = makeName('Robert', '"Beto"', 'O\'Rourke');
+    console.log(name02);
+
+    let name03 = makeName('Taylor', 'Alison', 'Swift');
+    console.log(name03);
   </script>
 </body>
 </html>
