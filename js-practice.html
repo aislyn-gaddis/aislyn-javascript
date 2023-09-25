@@ -11,6 +11,7 @@
   <script>
     // Chapter 9: JavaScript Basics
 
+    // doing some math
     console.log("Let's do math:");
     let x = 5;
     console.log(x);
@@ -26,6 +27,7 @@
     console.log(b - a);
     console.log(b / a);
 
+    // making my name with a string
     console.log('Working with strings')
     let firstName = 'Aislyn';
     let middleName = 'Grace';
@@ -46,6 +48,7 @@
       return Math.pow(theNumb, 2);
     }
 
+    // testing the square function
     let try01 = makeSquare(3);
     console.log(try01);
 
@@ -61,6 +64,7 @@
       return name;
     }
 
+    // testing the name function
     let name01 = makeName('Aislyn', 'Grace', 'Gaddis');
     console.log(name01);
 
@@ -69,6 +73,41 @@
 
     let name03 = makeName('Taylor', 'Alison', 'Swift');
     console.log(name03);
+    
+    // Just a log to show in our console
+    console.log('Making better name function');
+
+    // A better name function to fix middle initials
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + '.';
+      }
+      let fullName = firstName + ' ' + middleName + ' '+ lastName;
+      return fullName;
+    }
+
+    // testing the better name function
+    console.log(makeBetterName('Joan', 'Marie', 'Larkin'));
+    console.log(makeBetterName('John', 'F', 'Kennedy'));
+    console.log(makeBetterName('Aislyn', 'G', 'Gaddis'));
+
+    // making a score function
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      } else if (away > home) {
+        return "Away team wins :("
+      } else {
+        return 'It was a tie'
+      }
+    }
+
+    // testing the function
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(3,3));
+
   </script>
 </body>
 </html>
